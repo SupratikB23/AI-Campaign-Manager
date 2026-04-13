@@ -12,11 +12,12 @@
 <img src="https://img.shields.io/badge/-Playwright_Scraping-2EAD33?style=flat-&logo=playwright&logoColor=white" />
 
 <br />
+<br />
 
 > **A localhost-first platform for creating brand-aligned ad images using AI.** <br>
 > Define your brand's DNA, build campaigns, and generate professional ad creatives - automatically.
 
-<br />
+
 </div>
 
 ---
