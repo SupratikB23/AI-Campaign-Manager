@@ -2,27 +2,21 @@
 
 # Campaign Management Platform
 
-<img src="https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/SQLite-better--sqlite3-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-<img src="https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-<img src="https://img.shields.io/badge/Tailwind_CSS-4.2-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-<img src="https://img.shields.io/badge/FLUX.1--schnell-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-<img src="https://img.shields.io/badge/Gemini_Vision-2.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white" />
-<img src="https://img.shields.io/badge/Playwright-Scraping-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" />
+<img src="https://img.shields.io/badge/-React_19.2.4-61DAFB?style=flat&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/-Node.js_Express-339933?style=flat-&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/-SQLite_better--sqlite3-003B57?style=flat-&logo=sqlite&logoColor=white" />
+<img src="https://img.shields.io/badge/-Vite_8.0-646CFF?style=flat-&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/-Tailwind_CSS_4.2-38B2AC?style=flat-&logo=tailwind-css&logoColor=white" />
+<img src="https://img.shields.io/badge/-FLUX.1--schnell_HuggingFace-ff9a1e?style=flat-&logo=huggingface&logoColor=white" />
+<img src="https://img.shields.io/badge/-Gemini_Vision_2.5_Flash-4285F4?style=flat-&logo=google&logoColor=white" />
+<img src="https://img.shields.io/badge/-Playwright_Scraping-2EAD33?style=flat-&logo=playwright&logoColor=white" />
 
 <br />
 
-> **A localhost-first platform for creating brand-aligned ad images using AI.**
-> Define your brand's DNA, build campaigns, and generate professional ad creatives — automatically.
+> **A localhost-first platform for creating brand-aligned ad images using AI.** <br>
+> Define your brand's DNA, build campaigns, and generate professional ad creatives - automatically.
 
 <br />
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-![Platform](https://img.shields.io/badge/Platform-localhost-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
-
 </div>
 
 ---
