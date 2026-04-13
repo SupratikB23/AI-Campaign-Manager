@@ -1,0 +1,22 @@
+{
+  "name": "campaign-management",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --prefix client",
+    "server": "node server/index.js",
+    "install:all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.59.1",
+    "sharp": "^0.34.5",
+    "slugify": "^1.6.6"
+  }
+}
