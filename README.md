@@ -97,7 +97,7 @@ Each generation inside a campaign is one AI-produced image. Every generation sto
 │                        Browser (localhost:5173)                 │
 │                                                                 │
 │   BrandList ──► BrandForm ──► BrandDetail ──► CampaignPage      │
-│      (list)    (create/edit)  (view+manage)  (generate images)  │
+│   (list)    (create/edit)  (view+manage)  (generate images)     │
 └─────────────────────────────┬───────────────────────────────────┘
                               │  REST API (proxied to :3001)
 ┌─────────────────────────────▼───────────────────────────────────┐
