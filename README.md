@@ -96,19 +96,19 @@ Each generation inside a campaign is one AI-produced image. Every generation sto
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Browser (localhost:5173)                 │
 │                                                                 │
-│   BrandList ──► BrandForm ──► BrandDetail ──► CampaignPage     │
-│      (list)    (create/edit)  (view+manage)  (generate images) │
+│   BrandList ──► BrandForm ──► BrandDetail ──► CampaignPage      │
+│      (list)    (create/edit)  (view+manage)  (generate images)  │
 └─────────────────────────────┬───────────────────────────────────┘
                               │  REST API (proxied to :3001)
 ┌─────────────────────────────▼───────────────────────────────────┐
 │                     Express Server (localhost:3001)             │
 │                                                                 │
 │  /api/brands   ──►  brands.js   ──►  scraper.js + logo-extractor│
-│  /api/campaigns ──► campaigns.js                               │
-│  /api/generate  ──► generations.js ──► prompt-builder.js       │
-│                                    ──► huggingface.js          │
+│  /api/campaigns ──► campaigns.js                                │
+│  /api/generate  ──► generations.js ──► prompt-builder.js        │
+│                                    ──► huggingface.js           │
 │                                                                 │
-│  /static/generated  (serves images from disk)                  │
+│  /static/generated  (serves images from disk)                   │
 └────────────────┬────────────────────────────────────────────────┘
                  │
    ┌─────────────▼──────────────────────────────┐
@@ -180,20 +180,20 @@ Campaign Management (NEW)/
    ┌─────────────────────────────────────────────────────────────────┐
    │  STEP 1: Create Brand DNA                                       │
    │                                                                 │
-   │  Option A — Manual:  Fill in brand details in the form         │
-   │  Option B — Scrape:  Paste website URL → AI extracts:          │
+   │  Option A — Manual:  Fill in brand details in the form          │
+   │  Option B — Scrape:  Paste website URL → AI extracts:           │
    │             • Brand name, tagline, values, aesthetic, tone      │
    │             • Color palette (from screenshot)                   │
    │             • Fonts (from DOM computed styles)                  │
-   │             • Logo (DOM → Gemini bbox crop → OWL-ViT fallback) │
+   │             • Logo (DOM → Gemini bbox crop → OWL-ViT fallback)  │
    └───────────────────────────────┬─────────────────────────────────┘
                                    │
    ┌───────────────────────────────▼─────────────────────────────────┐
    │  STEP 2: Create a Campaign                                      │
    │                                                                 │
    │  • Assign to a Brand DNA                                        │
-   │  • Set: name, description, ad type                             │
-   │    (social / banner / product / print / promo)                 │
+   │  • Set: name, description, ad type                              │
+   │    (social / banner / product / print / promo)                  │
    └───────────────────────────────┬─────────────────────────────────┘
                                    │
    ┌───────────────────────────────▼─────────────────────────────────┐
@@ -490,18 +490,18 @@ Website URL
 │                                  │
 │  Tier 2 — Gemini bbox crop:      │
 │    Crop logo from screenshot     │
-│    using Gemini's coordinates     │
-│    (Sharp for image processing)  │
+│    using Gemini's coordinates    | 
+│   (Sharp for image processing)   │
 │                                  │
 │  Tier 3 — OWL-ViT detection:     │
 │    Zero-shot object detection    │
 │    via HuggingFace inference     │
-│    ("company logo", "brand mark")│
+│  ("company logo", "brand mark")  │
 └───────────────┬──────────────────┘
                 │
                 ▼
    Form auto-filled with all data
-   (user can review & edit before saving)
+(user can review & edit before saving)
 ```
 
 ---
@@ -511,25 +511,23 @@ Website URL
 ```
 User writes a brief (or custom prompt)
               │
-              ▼
-┌──────────────────────────────────────────┐
+┌─────────────▼────────────────────────────┐
 │  Prompt Builder (if brief mode)          │
 │                                          │
 │  "A professional [ad_type] advertisement │
 │   for [brand_name].                      │
 │   [brief]                                │
 │   Style: [aesthetic].                    │
-│   Color scheme: [colors].               │
-│   Mood and tone: [tone].                │
-│   Brand values: [values].               │
-│   Tagline: "[tagline]".                 │
+│   Color scheme: [colors].                │
+│   Mood and tone: [tone].                 │
+│   Brand values: [values].                │
+│   Tagline: "[tagline]".                  │
 │   High quality, professional advertising │
 │   photography, clean composition,        │
 │   visually striking."                    │
 └───────────────────┬──────────────────────┘
                     │
-                    ▼
-┌──────────────────────────────────────────┐
+┌───────────────────▼──────────────────────┐
 │  HuggingFace FLUX.1-schnell API          │
 │                                          │
 │  POST https://router.huggingface.co/     │
@@ -541,8 +539,7 @@ User writes a brief (or custom prompt)
 │  • Response: PNG image buffer            │
 └───────────────────┬──────────────────────┘
                     │
-                    ▼
-┌──────────────────────────────────────────┐
+┌───────────────────▼──────────────────────┐
 │  Storage                                 │
 │                                          │
 │  • Save PNG to:                          │
