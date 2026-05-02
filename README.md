@@ -1,10 +1,10 @@
+<img width="1500" height="599" alt="Campaign-Manager" src="https://github.com/user-attachments/assets/a0b0fb64-ecca-457e-a2c8-339e334b2ca5" />
+
+
 <div align="center">
 
 # Campaign Management Platform
 
-<img src="https://img.shields.io/badge/-React_19.2.4-61DAFB?style=flat&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/-Node.js_Express-339933?style=flat-&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/-SQLite_better--sqlite3-003B57?style=flat-&logo=sqlite&logoColor=white" />
 <img src="https://img.shields.io/badge/-Vite_8.0-646CFF?style=flat-&logo=vite&logoColor=white" />
 <img src="https://img.shields.io/badge/-Tailwind_CSS_4.2-38B2AC?style=flat-&logo=tailwind-css&logoColor=white" />
 <img src="https://img.shields.io/badge/-FLUX.1--schnell_HuggingFace-ff9a1e?style=flat-&logo=huggingface&logoColor=white" />
