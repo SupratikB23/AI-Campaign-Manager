@@ -148,7 +148,8 @@ The SQLite database (`campaign.db`) and the `generated/` folder will be created 
 
 ## Documentation
 
-For architecture diagrams, full API reference, database schema, pipeline details, and development notes, see **[DOCS.md](./DOCS.md)**.
+> For architecture diagrams, full API reference, database schema, pipeline details, and development notes — <br>
+> **[View the full technical documentation in DOCS.md →](./DOCS.md)**
 
 ---
 
