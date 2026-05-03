@@ -146,4 +146,8 @@ The SQLite database (`campaign.db`) and the `generated/` folder will be created 
 
 ---
 
+## Architecture Diagram
+
+<img width="1200" height="1225" alt="ai-campaign-manager-architecture" src="https://github.com/user-attachments/assets/5c22d92e-6c0c-432b-a6c8-e4f5c4631562" />
+
 
