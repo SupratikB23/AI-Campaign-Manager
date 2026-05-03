@@ -1,5 +1,8 @@
 # Campaign Management Platform - Technical Documentation
 
+This file contains deep technical details for contributors and developers. 
+For setup and usage, see [README.md](./README.md).
+
 ## Table of Contents
 
 - [Core Concepts](#core-concepts)
