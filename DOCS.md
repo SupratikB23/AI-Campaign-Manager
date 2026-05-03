@@ -1,3 +1,5 @@
+# Campaign Management Platform - Technical Documentation
+
 ## Table of Contents
 
 - [Core Concepts](#core-concepts)
